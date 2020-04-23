@@ -50,7 +50,7 @@ web应用程序：可以提供浏览器访问的程序；
 
 页面会动态展示：web页面的展示效果因人而异；
 
-![image-20200422041606928](D:\JavaBasic\Javaweb\动态资源.png)
+![image-20200422041606928](D:\JavaKuang\动态资源.png)
 
 缺点
 
@@ -117,7 +117,7 @@ tomcat官网
 
 文件夹和作用
 
-![image-20200422043904008](D:\JavaBasic\Javaweb\tomcat.png)
+![image-20200422043904008](D:\JavaKuang\tomcat.png)
 
 启动tomcat   startup.bat
 
@@ -252,7 +252,12 @@ https安全
 #### 1.响应体
 
 - refrush刷新  告诉客户端，多久刷新一次
+
 - location 让网页重新定位
+
+- ```
+  "Cache-Control  缓存控制
+  ```
 
 #### 2.响应状态码
 
@@ -361,9 +366,9 @@ settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
 
 2.创建maven项目web
 
-3.![image-20200422062630607](D:\JavaBasic\Javaweb\maven.png)
+3.![image-20200422062630607](D:\JavaKuang\maven.png)
 
-![image-20200422062917838](D:\JavaBasic\Javaweb\maven选项.png)
+![image-20200422062917838](D:\JavaKuang\maven选项.png)
 
 3.等待初始化
 
@@ -375,13 +380,13 @@ settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
 
 注意：IDEA项目创建成功后，看一眼Maven的配置
 
-![image-20200422063808193](D:\JavaBasic\Javaweb\IDEMAVEN设置.png)
+![image-20200422063808193](D:\JavaKuang\IDEMAVEN设置.png)
 
 6、到这里maven在IDEA中的配置就成功了
 
 ### 5.7maven创建一个普通项目
 
-![image-20200422064232003](D:\JavaBasic\Javaweb\MAVEN普通项目.png)
+![image-20200422064232003](D:\JavaKuang\MAVEN普通项目.png)
 
 ### 5.8、标记文件夹功能
 
@@ -389,13 +394,13 @@ settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
 
 ### 5.9在IDEA中配置tomcat
 
-![image-20200422065341421](D:\JavaBasic\Javaweb\tomcatIDEA.png)
+![image-20200422065341421](D:\JavaKuang\tomcatIDEA.png)
 
-![image-20200422065600933](D:\JavaBasic\Javaweb\Tomcat配置.png)
+![image-20200422065600933](D:\JavaKuang\Tomcat配置.png)
 
-![image-20200422065916739](D:\JavaBasic\Javaweb\解决配置IDEATomcat警告.png)
+![image-20200422065916739](D:\JavaKuang\解决配置IDEATomcat警告.png)
 
-![image-20200422070625358](D:\JavaBasic\Javaweb\18.png)
+![image-20200422070625358](D:\JavaKuang\18.png)
 
 5.10POM 文件
 
@@ -428,7 +433,7 @@ maven由于约定大于配置，我们之后可能遇到我们的配置文件，
     </build>
 ```
 
-![image-20200422073036625](D:\JavaBasic\Javaweb\i35.png)
+![image-20200422073036625](D:\JavaKuang\i35.png)
 
 mavenjar关系图
 
@@ -525,7 +530,7 @@ protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws S
 
 Servlet是由web服务器调用，web服务器在收到浏览器请求之后，会：
 
-![image-20200422161238332](D:\JavaBasic\Javaweb\Servlet2.png)
+![image-20200422161238332](D:\JavaKuang\Javaweb\Servlet2.png)
 
 ### 6.4Mapping问题
 
@@ -730,7 +735,7 @@ web服务器接收到客户端的http请求，针对这个请求，分别创建�
 - 获取客户端参数HttpServletRequest
 - 给用户信息HttpServletResponse
 
-1、简单分类
+#### 1、简单分类
 
 负责向浏览器发送数据的方法
 
@@ -765,3 +770,102 @@ void setDateHeader(String var1, long var2);
 
 
 
+#### 2.常见应用
+
+1.向浏览器输出信息
+
+2.下载文件
+
+- 要下载文件的路径
+- 下载的文件名是啥
+- 设置想办法让浏览器支持下载我们需要的东西
+- 获取下载文件的输入流
+- 创建缓冲区
+- 获取OutputStream对象
+- 将FileOutputStream写入到buffer缓冲区
+- 使用OutputStream将缓冲区的数据输出到客户端
+
+```
+//-要下载文件的路径
+String realPath="D:\\JavaKuang\\javaweb-02-servlet\\response\\target\\response-1.0-SNAPSHOT\\WEB-INF\\classes\\张雪松.png";
+System.out.println(realPath);
+//下载的文件名是啥
+String fileName=realPath.substring(realPath.lastIndexOf("\\")+1);
+//设置想办法让浏览器支持下载我们需要的东西                             解决中文问题
+resp.setHeader("Content-Disposition","attachment;filename="+ URLEncoder.encode(fileName,"utf-8"));
+//获取下载文件的输入流
+FileInputStream in=new FileInputStream(realPath);
+//创建缓冲区
+int len=0;
+byte[] buffer=new byte[1024];
+//获取OutputStream对象
+ServletOutputStream out=resp.getOutputStream();
+//将FileOutputStream写入到buffer缓冲区,使用OutputStream将缓冲区的数据输出到客户端
+while ((len=in.read(buffer))>0){
+    out.write(buffer,0,len);
+}
+in.close();
+out.close();
+```
+
+#### 3.验证码功能
+
+验证码怎么实现的？
+
+- 前端实现
+- 后端实现，需要java的图片类
+
+#### 4.实现重定向
+
+![image-20200423214306015](D:\JavaKuang\Javaweb\重定向.png)
+
+一个web资源收到客户端请求后，他会通知客户端去访问另一个web资源
+
+，这个过程叫重定向
+
+常见场景：
+
+- 用户登录
+
+- ```
+  //        resp.setHeader("Location","/img");
+  //        resp.setStatus(HttpServletResponse.SC_FOUND);
+          resp.sendRedirect("/response_war/img");//重定向
+  ```
+
+面试题：请你聊聊重定向和转发的区别？
+
+相同点：
+
+- 页面跳转
+
+不同点：
+
+- 请求转发的时候url不会变化	307
+- 重定向地址栏会变化	  302	
+
+### 6.7、HttpServletRequst
+
+HttpServletRequst代表客户端的请求，用户通过http访问服务器，Http请求中的所有信息会被封装到HttpServletRequst，通过HttpServletRequst的方法获得客户端的所有信息
+
+#### 1.获取前端传递参数
+
+![image-20200423221357461](D:\JavaKuang\Javaweb\request.png)
+
+#### 2.请求转发
+
+```
+req.setCharacterEncoding("utf-8");
+resp.setContentType("text/html");
+resp.setCharacterEncoding("utf-8");
+String username=req.getParameter("username");
+String password=req.getParameter("password");
+String[] hobbys=req.getParameterValues("hobbys");
+System.out.println("==================");
+//请求中文乱码问题  在请求出设置字符编码格式
+System.out.println(Arrays.toString(hobbys)+username+password);
+System.out.println("==================");
+//通过请求转发
+//   这里的/代表当前web应用
+req.getRequestDispatcher("/success.jsp").forward(req,resp);
+```
