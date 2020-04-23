@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    //ES6之后
+    class student1{
+        constructor(name) {
+            this.name=name;
+        }
+        hello(){
+            alert("hello")
+        }
+    }
+    var  xiaoming=new student1("小明")
+    class xiaoxuesheng extends student1{
+        constructor(name,grade) {
+           super(name);
+           this.grade=grade;
+        }
+        myGrade(){
+            alert('我是小学生')
+        }
+    }
+    var xiaoxue=new xiaoxuesheng("zxs",123)
+</script>
+
+
+</body>
+</html>

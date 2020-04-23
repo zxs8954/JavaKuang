@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+
+    function getAge() {
+        var now=new Date().getFullYear();
+        return now-zxs.birth;
+    }
+    var zxs={
+        name: "zxs",
+        birth: 1993,
+        //方法
+        age: getAge
+    }
+    getAge.apply(zxs,[])//指向zxs这个对象，空参数
+</script>
+
+
+</body>
+</html>

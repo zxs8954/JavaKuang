@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+<form action="1.我的第一个网页.html" method="get">
+    <p>
+        姓名<input type="text" name="name">
+        <input type="submit" name="submit">
+    </p>
+    <!--
+        下拉框，列表框
+    -->
+    <p>国家
+        <select name="列表名称">
+            <option value="china">中国</option>
+            <option value="usa">美国</option>
+            <option value="rs" selected>瑞士</option>
+            <option value="yd">印度</option>
+        </select>
+    </p>
+<!--    文本域-->
+    <p>反馈：
+        <textarea name="textarea" cols="10" rows="50">文本内容</textarea>
+    </p>
+<!--    文件域-->
+    <p>
+        <input type="file" name="files">
+        <input type="button" value="上传" name="upload">
+    </p>
+<!--    邮件验证-->
+    <p>邮箱:
+        <input type="email" name="email">
+    </p>
+<!--    url验证-->
+    <p>
+        <input type="url" name="url">
+    </p>
+<!--    数字验证-->
+    <p>
+        <input type="number" name="num" max="100" min="0" step="10">
+    </p>
+<!--    滑块-->
+    <p>音量：
+        <input type="range" name="voice" max="100" min="10">
+    </p>
+<!--    搜索框-->
+    <p>搜索框
+        <input type="search" name="sear">
+    </p>
+<!--    增加鼠标可用性
+            可以指向一个位置-->
+    <label for="mark">你点我试试</label>
+    <input type="text" id="mark">
+<!--    自定义邮箱
+pattern 正则表达式，自己去网上搜
+-->
+    <P>自定义邮箱:
+        <input type="text" name="diymail" pattern="">
+    </P>
+</form>
+</body>
+</html>

@@ -1,0 +1,44 @@
+a{
+    text-decoration: none;
+}
+.title{
+    font-size: 18px;
+    font-weight: bold;
+    text-indent: 4em;
+    line-height: 100px;
+    /*颜色  图片   图片位置  平铺方式*/
+    background: red url("../images/1.png") 217px 5px no-repeat;
+}
+/*ul li
+list-style
+        none 无圆
+        circle 空心圆
+        decimal 数字
+        square 正方形
+
+*/
+/*ul{*/
+/*    background: rgba(14, 4, 10, 0.66);*/
+/*}*/
+ul li{
+    height: 30px;
+    list-style: none;
+    text-indent: 1em;
+    background-image: url("../images/2.png");
+    background-repeat: no-repeat;
+    background-position: 186px -18px;
+}
+a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+}
+a:hover{
+    color: orange;
+    text-decoration: underline;
+}
+#nav{
+    width: 300px;
+    height: 354px;
+    background: #a0a0a0;
+}

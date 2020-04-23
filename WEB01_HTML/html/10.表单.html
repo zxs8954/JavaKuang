@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录注册</title>
+</head>
+<body>
+<h1>注册</h1>
+<!--表单form
+        action:表单提交的地址，可以是网站，也可以是一个请求处理地址
+        method: post get 提交方式
+        get：可以在url中看到我们提交的信息，不安全，高效
+        post: 安全，传输大文件
+        -->
+<form action="1.我的第一个网页.html" method="get">
+<!--    文本输入框： input type="text"-->
+<!--    readonly只读 value="admin"
+        required不能为空
+        placeholder默认提示信息
+-->
+    <p>名字:<input type="text" name="username"  placeholder="请输入用户名" required></p>
+    <p>密码:<input type="text" name="password" value="123456" hidden></p>
+    <p>
+        <input type="submit">
+        <br/>
+        <hr/>
+        <input type="reset">
+    </p>
+    <!--    文本输入框： input type="text"
+                value：默认显示
+                maxlength最大长度
+                size 文本框长度
+    -->
+    <p>名字:<input type="text" name="username" value="我好帅" maxlength="8" size="30"></p>
+    <p>密码:<input type="text" name="password"></p>
+    <!--    单选框标签
+        input type=radio
+        value :单选框的值
+        name: 表示组，组不一样可以同时选2个
+        -->
+    <!--    多选框-->
+    <p>
+        <input type="checkbox" value="sleep" name="hobby" checked>睡觉
+        <input type="checkbox" value="code" name="hobby">敲代码
+        <input type="checkbox" value="chat" name="hobby">聊天
+        <input type="checkbox" value="game" name="hobby">游戏
+    </p>
+
+<!--    按钮
+        input   type="button" 普通按钮
+        input   type="image"    图片
+        input   type="submit"   提交
+        input   type="reset" 重置
+-->
+    <p>
+        <input type="button" name="btn" value="点击边长">
+        <input type="image" src="../resource/img/1.jpg">
+    </p>
+<!--disable 禁用-->
+    <p>性别:<input type="radio" value="boy" name="sex" disabled>男
+        <input type="radio" value="girl" name="sex">女
+    </p>
+    <p>
+        <input type="submit">
+        <br/>
+    <hr/>
+    <input type="reset">
+    </p>
+</form>
+<hr>
+<br>
+<br>
+<form action="1.我的第一个网页.html" method="post">
+    <!--    文本输入框： input type="text"
+                value：默认显示
+                maxlength最大长度
+                size 文本框长度
+    -->
+    <p>名字:<input type="text" name="username" value="我好帅" maxlength="8" size="30"></p>
+    <p>密码:<input type="text" name="password"></p>
+<!--    单选框标签
+    input type=radio
+    value :单选框的值
+    name: 表示组，组不一样可以同时选2个
+    -->
+<!--    多选框-->
+    <p>
+        <input type="checkbox" value="sleep" name="hobby">睡觉
+        <input type="checkbox" value="code" name="hobby">敲代码
+        <input type="checkbox" value="chat" name="hobby">聊天
+        <input type="checkbox" value="game" name="hobby">游戏
+    </p>
+    <p>性别:<input type="radio" value="boy" name="sex">男
+        <input type="radio" value="girl" name="sex">女
+    </p>
+    <p>
+        <input type="submit">
+        <br/>
+    <hr/>
+    <input type="reset">
+    </p>
+</form>
+</body>
+</html>

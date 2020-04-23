@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>连接标签学习</title>
+</head>
+<body>
+<!--使用name作为标记-->
+<a name="top">顶部</a>
+<!--
+href:必填，要跳转的连接
+target:表示窗口在哪打开
+    _blank 新标签打开
+    _self  默认自己网页打开
+-->
+<a href="1.我的第一个网页.html" target="_blank">点击我跳转</a>
+<a href="2.基本标签.html" >点击我跳转</a>
+<a href="3.图像标签.html" >点击我跳转</a>
+<a href="3.图像标签.html" >点击我跳转到百度</a>
+<br/>
+<hr/>
+<p>
+    <a href="1.我的第一个网页.html">
+        <img src="../resource/img/1.jpg" alt="图片加载失败" height="506" width="900" title="点击图片可以跳转">
+    </a>
+</p>
+<!--
+锚连接
+    1.需要一个标记
+    2.跳转到标记
+    标记在上面name=top
+-->
+<a href="#top">回到顶部</a>
+<a name="down">down</a>
+<br/>
+<hr/>
+<!--功能性连接
+    邮件连接：mailto
+    -->
+<a href="mailto:895462507@qq.com">点击联系我</a>
+<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=&site=qq&menu=yes">
+    <img border="0" src="http://wpa.qq.com/pa?p=2::53" alt="联系我" title="联系我"/>
+</a>
+</body>
+</html>

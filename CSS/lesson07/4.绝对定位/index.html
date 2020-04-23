@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        div{
+            margin: 10px;
+            padding: 5px;
+            font-size: 12px;
+            line-height: 25px;
+        }
+        /*
+        solid实线
+        dashed虚线
+        */
+        #father{
+            border: 1px solid #666;
+            padding: 20px;
+            position: relative;
+        }
+        #first{
+            border: 1px dashed #12661c;
+            background-color: #12661c;
+        }
+        #second{
+            border: 1px dashed #06f819;
+            background-color: #a0a0a0;
+            position: absolute;/*绝对定位*/
+            right: 300px;
+            top: 20px;
+        }
+        #third{
+            border: 1px dashed #FF0000;
+            background-color: #0000FF;
+        }
+
+    </style>
+
+
+
+
+
+
+</head>
+<body>
+
+<div id="father">
+    <div id="first">第一个盒子</div>
+    <div id="second">第二个盒子</div>
+    <div id="third">第三个盒子</div>
+
+</div>
+
+
+
+</body>
+</html>
