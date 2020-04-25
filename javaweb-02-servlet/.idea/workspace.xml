@@ -7,31 +7,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2953cd0c-cd28-421b-b4d5-e5ab360605cf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Javaweb/request.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Javaweb/重定向.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../image-20200423214306015.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../image-20200423221357461.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/request/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/request/src/main/java/com/kuang/servlet/LoginServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/request/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/request/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/request/src/main/webapp/success.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/response/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/response/src/main/java/com/kuang/servlet/FileServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/response/src/main/java/com/kuang/servlet/ImageServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/response/src/main/java/com/kuang/servlet/RedirectServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/response/src/main/java/com/kuang/servlet/RequestTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/response/src/main/resources/张雪松.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/response/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/response/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/response/src/main/webapp/success.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-session-cookie/note.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-session-cookie/src/main/java/com/kuang/servlet/CookieDemo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-session-cookie/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-session-cookie/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-session-cookie/target/classes/com/kuang/servlet/CookieDemo1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-session-cookie/target/javaweb-session-cookie-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-session-cookie/target/javaweb-session-cookie-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-session-cookie/target/javaweb-session-cookie-1.0-SNAPSHOT/WEB-INF/classes/com/kuang/servlet/CookieDemo1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-session-cookie/target/javaweb-session-cookie-1.0-SNAPSHOT/WEB-INF/lib/javax.servlet-api-4.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-session-cookie/target/javaweb-session-cookie-1.0-SNAPSHOT/WEB-INF/lib/javax.servlet.jsp-api-2.3.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-session-cookie/target/javaweb-session-cookie-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-session-cookie/target/javaweb-session-cookie-1.0-SNAPSHOT/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servlet-02/target/classes/com/kuang/servlet/GetServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-02/target/classes/com/kuang/servlet/GetServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servlet-02/target/servlet-02-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-02/target/servlet-02-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servlet-02/target/servlet-02-1.0-SNAPSHOT/WEB-INF/classes/com/kuang/servlet/GetServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-02/target/servlet-02-1.0-SNAPSHOT/WEB-INF/classes/com/kuang/servlet/GetServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../javaweb.md" beforeDir="false" afterPath="$PROJECT_DIR$/../javaweb.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +74,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/JavaBasic/NewJava" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../javaweb-session-cookie" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.25022998" />
@@ -182,11 +170,6 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
             </expand>
             <select />
           </treeState>
@@ -208,6 +191,9 @@
       <workItem from="1587548886963" duration="5995000" />
       <workItem from="1587641836630" duration="1020000" />
       <workItem from="1587643413955" duration="10101000" />
+      <workItem from="1587801456514" duration="409000" />
+      <workItem from="1587802351124" duration="1146000" />
+      <workItem from="1587804165000" duration="653000" />
     </task>
     <servers />
   </component>
@@ -230,10 +216,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="721" y="154" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587651393385" />
-    <state x="690" y="210" key="FileChooserDialogImpl" timestamp="1587653579510">
+    <state x="868" y="269" key="FileChooserDialogImpl" timestamp="1587804216605">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="210" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587653579510" />
+    <state x="868" y="269" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587804216605" />
     <state width="1279" height="512" key="GridCell.Tab.0.bottom" timestamp="1587653583875">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -286,10 +272,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="312" y="0" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587548591878" />
-    <state x="155" y="137" key="new project wizard" timestamp="1587651280248">
+    <state x="155" y="137" key="new project wizard" timestamp="1587801864716">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="155" y="137" key="new project wizard/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587651280248" />
+    <state x="155" y="137" key="new project wizard/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587801864716" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

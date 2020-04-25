@@ -833,13 +833,13 @@ out.close();
           resp.sendRedirect("/response_war/img");//重定向
   ```
 
-面试题：请你聊聊重定向和转发的区别？
+#### 面试题：请你聊聊重定向和转发的区别？
 
-相同点：
+#### 相同点：
 
 - 页面跳转
 
-不同点：
+#### 不同点：
 
 - 请求转发的时候url不会变化	307
 - 重定向地址栏会变化	  302	
@@ -869,3 +869,302 @@ System.out.println("==================");
 //   这里的/代表当前web应用
 req.getRequestDispatcher("/success.jsp").forward(req,resp);
 ```
+
+# 7.cookie session
+
+## 1.会话
+
+**会话**：用户打开浏览器，点击链接，访问web资源，关闭浏览器
+
+**有状态会话**：一个同学来过教室，下次再来教室，我们会知道这个同学，曾经来过，我们称为有状态会话
+
+你    西开
+
+- 发票    西开给你发票
+- 学校登记      西开标记你来过
+
+**一个网站，怎么证明你来过？**
+
+客户端     服务端
+
+1.服务端给客户端一个新建，客户端下次访问服务端带上信件就可以了；  cookie
+
+2.服务器登记你来过，下次你来了，下次你来的时候我来匹配你；
+
+## 2.保存会话的2种技术
+
+**cookie**
+
+- 客户端技术（响应，请求）
+
+**session**
+
+- 服务器技术，利用这个技术，可以保存用户的会话信息。可以把信息或者session放在session中
+
+常见场景：网站登录下次不用在登录，第二次访问直接上去了
+
+## 3cookie
+
+![image-20200425184222478](D:\JavaKuang\Javaweb\cookie.png)
+
+1.从请求中拿到cookie信息
+
+2.服务器响应给客户端cookie
+
+获得cookie
+
+```
+Cookie[] cookies=req.getCookies();//返回数组，cookie存在多个
+```
+
+获取cookie的key
+
+```
+cookie.getName().equals("lastLoginTime")
+```
+
+获取cookie的值
+
+```
+long lastLoginTime=Long.parseLong(cookie.getValue());
+```
+
+新建cookie
+
+```
+Cookie cookie=new Cookie("lastLoginTime",System.currentTimeMillis()+"");
+```
+
+设置 cookie有效期
+
+```
+cookie.setMaxAge(24*60*60);
+```
+
+响应cookie
+
+```
+resp.addCookie(cookie);
+```
+
+cookie：一般会保存在用户本地目录下
+
+
+
+**一个网站cookie是否存在上限！**
+
+- 一个cookie只能保存一个信息
+- 一个web站点可以给浏览器多个cookie，最多存放20个
+- 300个cookie浏览器上限
+- cookie大小限制4KB 
+
+
+
+删除cookie：
+
+- 不设置有效期，关闭浏览器，自动失效
+- 设置有效期时间为0
+
+## 4Session（重点）
+
+![image-20200425184424929](D:\JavaKuang\Javaweb\session.png)
+
+什么是session：
+
+- 服务器会给每一个浏览器创建一个session（每个浏览器的session不同）
+- 一个Session独占一个浏览器，只要浏览器不关闭，session就存在
+- 用户登录之后，整个网站都可以访问   保存用户的信息（Session）
+
+**session和cookie的区别**
+
+- cookie是把用户的数据写给用户的浏览器保存
+- Session用户的数据写到用户独占的session中，服务器端保存（保存重要信息，减少服务器资源浪费）
+- Session服务器对象由服务器创建
+
+
+
+
+
+session使用场景：
+
+- 保存一个登陆用户信息
+- 购物车信息
+- 在整个网站中，经常会使用的数据，保存在Session中
+
+
+
+使用Session：
+
+```
+   //解决乱码问题
+        resp.setCharacterEncoding("utf-8");
+        req.setCharacterEncoding("utf-8");
+        resp.setContentType("text/html;Charset=utf-8");
+        //得到session
+        HttpSession session=req.getSession();
+        //给session中存东西
+//        session.setAttribute("name","张雪松");
+        session.setAttribute("name",new Person("张雪松",1));
+        //获取sessionID
+        String sessionId=session.getId();
+        //判断session是不是新创建的
+       if(session.isNew()){
+           resp.getWriter().write("session创建成功，ID为:"+sessionId);
+       }else {
+           resp.getWriter().write("session已存在，ID为:"+sessionId);
+       }
+       //session创建的时候作了什么事情
+//        Cookie cookie=new Cookie("JSESSIONID",sessionId);
+//       resp.addCookie(cookie);
+```
+
+
+
+```
+//得到session
+HttpSession session=req.getSession();
+Person person= (Person) session.getAttribute("name");
+System.out.println(person.toString());
+```
+
+
+
+```
+HttpSession session=req.getSession();
+session.removeAttribute("name");
+//手动注销session
+session.invalidate();
+```
+
+会话自动过期
+
+```
+<!--设置session的失效时间-->
+    <session-config>
+<!--1分钟后session自动失效，分钟单位-->
+        <session-timeout>1</session-timeout>
+    </session-config>
+```
+
+
+
+
+
+![image-20200425184605222](D:\JavaKuang\Javaweb\后面进阶.png)
+
+# 8JSP
+
+## 1.什么是jsp
+
+java Server oages:java服务器端页面，也和Servlet一样用于动态web技术
+
+最大特点
+
+- 写jsp 就像在Html
+- 区别：
+  - HTML只给用户提供静态数据
+  - JSP页面可以嵌入JAVA代码，为用户提供动态数据
+
+## 2.JSP原理
+
+思路：JSP怎么执行的
+
+- 代码层面没有任何问题
+
+- 服务器内部
+
+  tomcat中有一个work目录
+
+  IDEA中使用Tomcat会在IDEA中产生一个Work目录
+
+  ![image-20200425185820280](D:\JavaKuang\Javaweb\IDEA0.png)
+
+我电脑的地址
+
+C:\Users\89546\.IntelliJIdea2019.3\system\tomcat\Unnamed_javaweb-session-cookie\work\Catalina\localhost\javaweb_session_cookie_war\org\apache\jsp
+
+发现页面变成了java程序
+
+![image-20200425185959568](D:\JavaKuang\Javaweb\java程序.png)
+
+浏览器向服务器发送请求，不管访问什么资源，其实都是在访问servlet
+
+JSP最终也会被转换为Java类
+
+**JSP本质上就是一个Servlet**
+
+```
+//初始化
+public void _jspInit() {
+}
+//销毁
+public void _jspDestroy() {
+}
+//JSPServer
+public void _jspService(final javax.servlet.http.HttpServletRequest request, final javax.servlet.http.HttpServletResponse response)
+```
+
+1.判断请求
+
+2.内置一些对象
+
+```
+final javax.servlet.jsp.PageContext pageContext; //页面上下文
+javax.servlet.http.HttpSession session = null; //session
+final javax.servlet.ServletContext application;//applicationContext
+final javax.servlet.ServletConfig config;//config
+javax.servlet.jsp.JspWriter out = null;//out
+final java.lang.Object page = this;//page
+HttpServletRequest			//请求
+HttpServletResponse 		//响应
+```
+
+3.输出页面前增加的代码
+
+```
+response.setContentType("text/html");			//设置响应页面类型
+pageContext = _jspxFactory.getPageContext(this, request, response,
+         null, true, 8192, true);				
+_jspx_page_context = pageContext;
+application = pageContext.getServletContext();
+config = pageContext.getServletConfig();
+session = pageContext.getSession();
+out = pageContext.getOut();
+_jspx_out = out;
+```
+
+
+
+4.以上这些个对象我们可以在JSP页面中使用（JSp流程）
+
+![image-20200425192424344](D:\JavaKuang\Javaweb\JSP流程.png)
+
+在JSP页面中：
+
+只要是java代码就会原封不动的输出
+
+如果是HTML代码，就会被转换为
+
+out.write("\r\n");
+      out.write("\r\n");
+      out.write("<html>\r\n");
+      out.write("<head>\r\n");
+      out.write("    <title>Title</title>\r\n");
+      out.write("</head>\r\n");
+      out.write("<body>\r\n");
+      out.write("hello\r\n");
+      out.write("\r\n");
+
+    String name="zxs";
+    
+      out.write("\r\n");
+      out.write("name");
+      out.print(name);
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("</body>\r\n");
+      out.write("</html>\r\n");
+这样的格式输出到前端
+
+## 3。JSP基础语法
+
