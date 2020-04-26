@@ -1168,3 +1168,151 @@ out.write("\r\n");
 
 ## 3。JSP基础语法
 
+任何语言都有自己的语法JSP作为java技术的一种应用，它拥有一些自己扩充的语法java语法都支持
+
+JSP表达式
+
+```
+<%-- JSP表达式
+ 作用：用来将程序的输出，输出到客户端
+ <%= %>
+ --%>
+  <%= new Date()
+```
+
+**JSP脚本片段**
+
+```
+<%
+    int sum = 0;
+    for (int i = 0; i <= 100; i++) {
+    sum+=i;
+    }
+    out.println("<h1>Sum="+sum+"</h1>");
+
+%>
+```
+
+**JSP脚本片段的在实现**
+
+```
+<%
+    int x = 10;
+    out.println(x);
+%>
+<p>这是一个脚本片段</p>
+<%
+    int y = 20;
+    out.println(y);
+%>
+
+<%--在代码中嵌入HTML元素--%>
+<%
+    for (int i = 0; i < 5; i++) {
+%>
+<h1>Hello Zxs <%=i%></h1>
+<%
+    }
+%>
+```
+
+**JSP声明**
+
+```
+<%!
+  static {
+      System.out.println("Loading Servlet!");
+  }
+    private int globaVar=0;
+  public void kuang(){
+      System.out.println("进入了方法");
+  }
+%>
+```
+
+JSP声明：会被编译到JSP生成的JAVA类中，其他的，就会被生成到_jspService方法中~
+
+在JSP，嵌入Java代码即可
+
+```java
+<%%>
+    <%=%>
+    <%!%>
+    
+```
+
+JSP 的注释，不会在客户端显示HTML就会
+
+## 4.JSP的指令
+
+```
+<%@ page isErrorPage="true" %>
+```
+
+
+
+```
+<error-page>
+    <error-code>404</error-code>
+    <location>/error/404.jsp</location>
+</error-page>
+<error-page>
+    <error-code>500</error-code>
+    <location>/error/500.jsp</location>
+</error-page>
+```
+
+**提取公共页面**
+
+```
+<%@ include file=""%>
+```
+
+
+
+```
+<%--@include会将2个页面合二为一--%>
+<%@include file="common/header.jsp" %>
+<h1>网页主体</h1>
+<%@include file="common/footer.jsp" %>
+<hr>
+<%--        jsp标签--%>
+<jsp:include page="common/header.jsp">
+```
+
+## 5.9  9大内置对象
+
+- PageContext   存东西
+
+- Request   存东西
+
+- Response
+
+- Session   存东西
+
+- Application   【ServletConfig】   存东西
+
+- config 【ServletConfig】
+
+- out
+
+- page
+
+- exception
+
+  
+
+```
+pageContext.setAttribute("name1","zxs1");//保存的数据只在一个页面有效
+request.setAttribute("name2","zxs2");//保存的数据只在一次请求中有效，请求转发会携带这个数据
+session.setAttribute("name3","zxs3");//保存的数据只在一次会话中有效
+application.setAttribute("name4","zxs4");//保存的数据只在服务器中有效，从打开服务器到关闭服务器
+```
+
+
+
+request:客户端向服务器发送气你跪求，产生的数据，用户看完就没用了，比如新闻用户看完了就没用了
+
+session：客户端发送请求，产生的数据，用户用完一会还用，比如购物车
+
+application：客户端发送请求，产生的数据，一个用户用完了，其他用户还可能用，比如聊天QQ
