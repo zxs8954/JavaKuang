@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="eaf53ee3-d28d-4eb5-ad06-2a453c8bee84" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../foreach.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../image-20200501151913309.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../image-20200501152436621.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../image-20200503125839245.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-filter/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-filter/.idea/artifacts/javaweb_filter_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-filter/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-filter/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-filter/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-filter/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-filter/javaweb-filter.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-filter/src/main/java/com/kuang/filter/CharacterEncodingFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-filter/src/main/java/com/kuang/filter/SysFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-filter/src/main/java/com/kuang/listener/OnlineCountListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-filter/src/main/java/com/kuang/servlet/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-filter/src/main/java/com/kuang/servlet/LogoutServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-filter/src/main/java/com/kuang/servlet/ShowServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-filter/src/main/java/com/kuang/servlet/TestPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-filter/src/main/java/com/kuang/util/Constant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-filter/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-filter/web/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-filter/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-filter/web/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-filter/web/sys/success.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-jdbc/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-jdbc/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-jdbc/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-jdbc/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-jdbc/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-jdbc/src/main/java/com/kuang/test/TestJDBC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-jdbc/src/main/java/com/kuang/test/TestJDBC2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-jdbc/src/main/java/com/kuang/test/TestJDBC3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-jsp/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-jsp/src/main/java/com/kuang/pojo/People.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-jsp/web/coreforeach.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-jsp/web/coreif.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-jsp/web/corewhen.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-jsp/web/javabean.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-jsp/web/jsptag.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-06/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-06/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-06/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-06/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-06/mybatis-06.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-06/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-06/src/main/java/com/kuang/dao/StudentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-06/src/main/java/com/kuang/dao/TeacherMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-06/src/main/java/com/kuang/pojo/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-06/src/main/java/com/kuang/pojo/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-06/src/main/java/com/kuang/utils/MybatisUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-06/src/main/resources/mapper/StudentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-06/src/main/resources/mapper/TeacherMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-06/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-06/src/test/java/MyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-06/target/classes/com/kuang/dao/StudentMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-06/target/classes/com/kuang/dao/TeacherMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-06/target/classes/com/kuang/pojo/Student.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-06/target/classes/com/kuang/pojo/Teacher.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-06/target/classes/com/kuang/utils/MybatisUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-06/target/classes/mapper/StudentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-06/target/classes/mapper/TeacherMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-06/target/classes/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-06/target/test-classes/MyTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-07/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-07/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-07/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-07/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-07/mybatis-07.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-07/src/main/java/com/kuang/dao/StudentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-07/src/main/java/com/kuang/dao/TeacherMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-07/src/main/java/com/kuang/pojo/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-07/src/main/java/com/kuang/pojo/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-07/src/main/java/com/kuang/utils/MybatisUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-07/src/main/resources/mapper/StudentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-07/src/main/resources/mapper/TeacherMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-07/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-07/src/test/java/MyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-07/target/classes/com/kuang/dao/StudentMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-07/target/classes/com/kuang/dao/TeacherMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-07/target/classes/com/kuang/pojo/Student.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-07/target/classes/com/kuang/pojo/Teacher.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-07/target/classes/com/kuang/utils/MybatisUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-07/target/classes/mapper/StudentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-07/target/classes/mapper/TeacherMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-07/target/classes/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-07/target/test-classes/MyTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-08/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-08/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-08/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-08/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-08/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-08/mybatis-08.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-08/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-08/src/main/java/com/kuang/dao/BlogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-08/src/main/java/com/kuang/pojo/Blog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-08/src/main/java/com/kuang/utils/IDUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-08/src/main/java/com/kuang/utils/MybatisUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-08/src/main/resources/mapper/BlogMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-08/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-08/src/test/java/MyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-08/target/classes/com/kuang/dao/BlogMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-08/target/classes/com/kuang/pojo/Blog.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-08/target/classes/com/kuang/utils/IDUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-08/target/classes/com/kuang/utils/MybatisUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-08/target/classes/mapper/BlogMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-08/target/classes/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-08/target/test-classes/MyTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-09/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-09/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-09/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-09/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-09/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-09/mybatis-09.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-09/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-09/src/main/java/com/kuang/dao/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-09/src/main/java/com/kuang/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-09/src/main/java/com/kuang/utils/MybatisUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-09/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-09/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-09/src/test/java/MyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-09/target/classes/com/kuang/dao/UserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-09/target/classes/com/kuang/pojo/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-09/target/classes/com/kuang/utils/MybatisUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-09/target/classes/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-09/target/classes/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis-09/target/test-classes/MyTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/.idea/Mybatis-Study.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/.idea/libraries/Maven__com_beust_jcommander_1_72.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_47.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/.idea/libraries/Maven__org_apache_extras_beanshell_bsh_2_0b6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/.idea/libraries/Maven__org_mybatis_mybatis_3_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/.idea/libraries/Maven__org_projectlombok_lombok_1_18_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/.idea/libraries/Maven__org_testng_testng_6_14_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/Mybatis-Study.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-01/mybatis-01.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-01/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-01/src/main/java/com/kuang/dao/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-01/src/main/java/com/kuang/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-01/src/main/java/com/kuang/utils/MybatisUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-01/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-01/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-01/src/test/java/com/kuang/dao/UserMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-01/target/classes/META-INF/mybatis-01.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-01/target/classes/com/kuang/dao/UserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-01/target/classes/com/kuang/pojo/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-01/target/classes/com/kuang/utils/MybatisUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-01/target/classes/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-01/target/classes/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-01/target/test-classes/META-INF/mybatis-01.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-01/target/test-classes/com/kuang/dao/UserMapperTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-02/mybatis-02.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-02/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-02/src/main/java/com/kuang/dao/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-02/src/main/java/com/kuang/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-02/src/main/java/com/kuang/utils/MybatisUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-02/src/main/resources/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-02/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-02/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-02/src/test/java/com/kuang/dao/UserDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-02/target/classes/META-INF/mybatis-02.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-02/target/classes/com/kuang/dao/UserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-02/target/classes/com/kuang/pojo/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-02/target/classes/com/kuang/utils/MybatisUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-02/target/classes/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-02/target/classes/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-02/target/classes/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-02/target/classes/testng.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-02/target/test-classes/META-INF/mybatis-02.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-02/target/test-classes/com/kuang/dao/UserDaoTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-03/mybatis-03.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-03/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-03/src/log/log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-03/src/main/java/com/kuang/dao/Mapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-03/src/main/java/com/kuang/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-03/src/main/java/com/kuang/utils/MybatisUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-03/src/main/resources/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-03/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-03/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-03/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-03/src/test/java/com/kuang/dao/MapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-03/target/classes/META-INF/mybatis-03.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-03/target/classes/com/kuang/dao/Mapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-03/target/classes/com/kuang/pojo/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-03/target/classes/com/kuang/utils/MybatisUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-03/target/classes/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-03/target/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-03/target/classes/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-03/target/classes/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-03/target/test-classes/META-INF/mybatis-03.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-03/target/test-classes/com/kuang/dao/MapperTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-05/mybatis-05.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-05/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-05/src/main/java/com/kuang/dao/Mapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-05/src/main/java/com/kuang/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-05/src/main/java/com/kuang/utils/MybatisUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-05/src/main/resources/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-05/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-05/src/test/java/MapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-05/target/classes/com/kuang/dao/Mapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-05/target/classes/com/kuang/pojo/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-05/target/classes/com/kuang/utils/MybatisUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-05/target/classes/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-05/target/classes/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/mybatis-05/target/test-classes/MapperTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatis/Mybatis-Study/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring组成.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sqlsession.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sqlsessionFactory.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaweb-jsp/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../javaweb-jsp/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaweb-jsp/out/artifacts/javaweb_jsp_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../javaweb-jsp/out/artifacts/javaweb_jsp_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaweb-jsp/out/artifacts/javaweb_jsp_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../javaweb-jsp/out/artifacts/javaweb_jsp_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaweb-jsp/out/artifacts/javaweb_jsp_war_exploded/jsp2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../javaweb-jsp/out/artifacts/javaweb_jsp_war_exploded/jsp2.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaweb-jsp/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../javaweb-jsp/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaweb-jsp/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../javaweb-jsp/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaweb-jsp/web/jsp2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../javaweb-jsp/web/jsp2.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaweb.md" beforeDir="false" afterPath="$PROJECT_DIR$/../javaweb.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\JavaKuang\Spring\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1bOBxiTTa0DFVA29L1vLdNBB78b" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eaf53ee3-d28d-4eb5-ad06-2a453c8bee84" name="Default Changelist" comment="" />
+      <created>1588493507847</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588493507847</updated>
+      <workItem from="1588493510536" duration="49000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="155" y="154" key="new project wizard" timestamp="1588493557708">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="155" y="154" key="new project wizard/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588493557708" />
+  </component>
+</project>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="用户管理系统测试套件">
+    <test name="用户管理系统测试用例">
+    <classes>
+        <class name="com.kuang.Demo">
+            <methods>
+                <include name="cc"/>
+                <include name="cc1"/>
+            </methods>
+            <methods>
+                <include name="cc"/>
+                <include name="cc1"/>
+            </methods>
+        </class>
+    </classes>
+    </test>
+    <listeners>
+        <listener class-name="com.kuang.ExtentTestNGIReporterListener"></listener>
+    </listeners>
+</suite>

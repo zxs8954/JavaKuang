@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.kuang.dao.UserMapper">
+    <select id="getUserList" resultType="com.kuang.pojo.User">
+        select  * from mybatis.user
+    </select>
+    <select id="getUserById" resultType="com.kuang.pojo.User">
+        select * from mybatis.user where id=#{id}
+    </select>
+    <delete id="deleteUser" parameterType="int">
+        delete from mybatis.user where id=#{id}
+    </delete>
+    <insert id="addUser" parameterType="com.kuang.pojo.User">
+        insert into user (id,name,pwd)values (#{id},#{name},#{pwd})
+    </insert>
+    <update id="updateUser" parameterType="com.kuang.pojo.User">
+        update user set name=#{name},pwd=#{pwd} where id=#{id}
+    </update>
+
+    <insert id="addUser2" parameterType="map">
+        insert into user (id,name,pwd) values (#{userID},#{userName},#{userPwd})
+    </insert>
+    
+    <select id="getUserById2" parameterType="map" resultType="com.kuang.pojo.User">
+        select * from user where id=#{id} and name=#{name}
+    </select>
+
+    <select id="getUserLike" resultType="com.kuang.pojo.User">
+        select * from user where  name like "%"#{value}"%"
+    </select>
+</mapper>

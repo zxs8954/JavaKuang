@@ -1280,7 +1280,7 @@ JSP 的注释，不会在客户端显示HTML就会
 <jsp:include page="common/header.jsp">
 ```
 
-## 5.9  9大内置对象
+## 5 9大内置对象
 
 - PageContext   存东西
 
@@ -1316,3 +1316,509 @@ request:客户端向服务器发送气你跪求，产生的数据，用户看完
 session：客户端发送请求，产生的数据，用户用完一会还用，比如购物车
 
 application：客户端发送请求，产生的数据，一个用户用完了，其他用户还可能用，比如聊天QQ
+
+## 6.JSP标签，JST标签，EL表达式
+
+```
+<!--            JSTL表达式-->
+            <dependency>
+                <groupId>javax.servlet.jsp.jstl</groupId>
+                <artifactId>jstl-api</artifactId>
+                <version>1.2</version>
+            </dependency>
+<!--        标签库    -->
+            <dependency>
+                <groupId>taglibs</groupId>
+                <artifactId>standard</artifactId>
+                <version>1.1.2</version>
+            </dependency>
+```
+
+EL表达式：${}
+
+- 获取数据
+- 执行运算
+- 获取web开发常用对象
+
+JSP 标签
+
+```
+<jsp:forward page="/jsp2.jsp">
+    <jsp:param name="name" value="zxs"></jsp:param>
+    <jsp:param name="age" value="28"></jsp:param>
+</jsp:forward>
+
+
+<%--取出参数--%>
+名字：<%=request.getParameter("name")%>
+年龄：<%=request.getParameter("age")%>
+```
+
+**JSTL表达式**
+
+JSTL标签库的使用就是弥补HTML标签的不足；他的自定义许多标签，可以供我们使用标签的功能和Java代码功能一样
+
+**核心标签**（掌握部分）
+
+
+
+```
+<%--引入JSTL核心标签库我们才能使用--%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+```
+
+**JSTL核心标签库使用步骤**
+
+- 引入对应的taglib
+- 在TOmcat中引入jstl包，包复制到tomcat  lib目录下，否则会报错
+
+```
+<h4>if测试</h4>
+<form action="coreif.jsp" method="get">
+    <input type="text" name="username" value="${param.username}">
+    <input type="submit" value="登录">
+</form>
+
+
+
+    <c:if test="${param.username=='admin'}" var="isAdmin">
+        <c:out value="管理员欢迎你"/>
+    </c:if>
+
+    <c:out value="${isAdmin}"/>
+```
+
+```
+<c:set var="score" value="85"/>
+<c:choose>
+    <c:when test="${score>=90}">
+        优秀1
+    </c:when>
+    <c:when test="${score>=85}">
+        优秀2
+    </c:when>
+    <c:when test="${score>=60}">
+        优秀24
+    </c:when>
+    <c:when test="${score==90}">
+        优秀3
+    </c:when>
+</c:choose>
+```
+
+```
+<%
+
+    ArrayList<String> people=new ArrayList<String>();
+    people.add(0,"zxs");
+    people.add(1,"lisi");
+    request.setAttribute("list",people);
+%>
+
+<c:forEach var="people" items="${list}">
+    <c:out value="${people}"/>
+</c:forEach>
+```
+
+# 9 javabean
+
+实体类
+
+Javabean有特定的写法
+
+- 必须有一个无参构造
+- 属性私有化
+- 必须有对应的get/set
+- 一般用来做数据库驱动ORM
+- ORM：对象关系映射
+  - 表  --类
+  - 字段--属性
+  - 行记录是对象
+
+| id   | name | age  | address |
+| ---- | ---- | ---- | ------- |
+| 1    | zxs1 | 22   | 杭州    |
+| 2    | zxs2 | 23   | 杭州    |
+| 3    | zxs3 | 24   | 杭州    |
+
+```java
+class People{
+    private int id;      //字段对应属性
+    private String name;
+    private String age;
+    private String address;  
+}
+
+
+<jsp:useBean id="People" class="com.kuang.pojo.People" scope="page"/>
+<jsp:setProperty name="People" property="address" value="杭州"/>
+<jsp:setProperty name="People" property="name" value="张雪松"/>
+<jsp:setProperty name="People" property="id" value="1"/>
+<jsp:setProperty name="People" property="age" value="28"/>
+姓名：<jsp:getProperty name="People" property="name"/>
+年龄：<jsp:getProperty name="People" property="age"/>
+地址：<jsp:getProperty name="People" property="address"/>
+ID：<jsp:getProperty name="People" property="id"/>
+```
+
+# 10 MVC三层架构
+
+什么是MVC   model，view,Controler  模型，视图，控制器
+
+老架构
+
+![image-20200427213408276](D:\JavaKuang\Javaweb\早些年架构.png)
+
+
+
+用户直接访问控制层，控制层就可以直接操作数据库
+
+CRUD数据库增删改查
+
+```java
+servlet--CRUD-->数据库
+    弊端：程序十分臃肿，不利于维护  servlet的代码中：处理响应，请求，视图，处理业务代码，处理逻辑代码
+架构：没有什么是不能加一层处理的 
+```
+
+
+
+MVC
+
+![image-20200427214520202](D:\JavaKuang\Javaweb\MVC2.png)
+
+model
+
+- 业务处理：业务逻辑（Service）
+- 数据持久层CRUD（DAO）
+
+view
+
+- 展示数据
+- 提供链接发起Servlet请求（a ,form img）
+
+Controller
+
+- 接收用户请求：（req:请求参数Session信息）
+- 交给业务层处理代码
+- 控制视图跳转
+
+```java
+登录--》接受用户登录请求--》处理用户的请求（获取用户登录参数）--》交给业务层处理登录业务（判断用户名密码是否正确：事物）--》DAO层查询用户名密码是否正确
+```
+
+# 11、Filter（重点）
+
+Filter：过滤器，用来过滤网站的数据；
+
+- 处理中文乱码
+- 处理登录验证
+
+![image-20200427215605239](D:\JavaKuang\Javaweb\过滤器.png)
+
+Filter开发步骤
+
+- 导包
+
+实现接口
+
+```
+//初始化
+public void init(FilterConfig filterConfig) throws ServletException {
+    System.out.println("CharacterEncoding");
+}
+//chain  ：链
+/*
+* 1.过滤器中的所有代码，在过滤特定请求的时候都会执行
+* 2.必须让过滤器继续同型
+* */
+public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+    servletRequest.setCharacterEncoding("utf-8");
+    servletResponse.setCharacterEncoding("utf-8");
+    servletResponse.setContentType("text/html;charset=UTF-8");
+    System.out.println("CharacterEncodingFilter执行前。。。");
+    filterChain.doFilter(servletRequest,servletResponse);//让我们的请求继续走，如果不写，程序到这里就会拦截
+    System.out.println("CharacterEncodingFilter执行后。。。");
+}
+
+//销毁 web服务器关闭的时候，过滤器会销毁
+public void destroy() {
+    System.gc();
+    System.out.println("CharacterEncodingFilter销毁");
+}
+```
+
+
+
+配置xml
+
+```
+<servlet>
+        <servlet-name>servlet</servlet-name>
+        <servlet-class>com.kuang.servlet.ShowServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servlet</servlet-name>
+        <url-pattern>/servlet/show</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>servlet</servlet-name>
+<!--        这个就不会被过滤-->
+        <url-pattern>/show</url-pattern>
+    </servlet-mapping>
+    <filter>
+        <filter-name>CharacterEncodingFilter</filter-name>
+        <filter-class>com.kuang.filter.CharacterEncodingFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>CharacterEncodingFilter</filter-name>
+<!--        只要是/servlet下的任何请求都会经过这个过滤器-->
+        <url-pattern>/servlet/*</url-pattern>
+    </filter-mapping>
+```
+
+# 12 监听器
+
+实现一个监听器接口；（有N种）
+
+实现监听器接口
+
+```
+//在线人数监听：统计session
+public class OnlineCountListener implements HttpSessionListener {
+    //创建session监听，看你的一举一动
+    //一旦创建一个session就会触发一个事件
+    public void sessionCreated(HttpSessionEvent se) {
+        ServletContext ctx=se.getSession().getServletContext();
+        System.out.println(se.getSession().getId());
+        Integer onlineCount= (Integer) ctx.getAttribute("OnlineCount");
+        if(onlineCount==null){
+            onlineCount=new Integer(1);
+        }else {
+            int count =onlineCount.intValue();
+            onlineCount=new Integer(count+1);
+        }
+        ctx.setAttribute("OnlineCount",onlineCount);
+    }
+    //销毁session监听
+    //一旦销毁session就会触发一次这个事件
+    public void sessionDestroyed(HttpSessionEvent se) {
+        ServletContext ctx=se.getSession().getServletContext();
+        Integer onlineCount= (Integer) ctx.getAttribute("OnlineCount");
+        if(onlineCount==null){
+            onlineCount=new Integer(1);
+        }else {
+            int count =onlineCount.intValue();
+            onlineCount=new Integer(count-1);
+        }
+        ctx.setAttribute("OnlineCount",onlineCount);
+    }
+    /*
+    * session销毁
+    * 1.手动销毁
+    * 2.自动销毁
+    * */
+```
+
+注册监听器
+
+```
+<!--    session过期时间配置  1分钟过期-->
+    <session-config>
+        <session-timeout>1</session-timeout>
+    </session-config>
+```
+
+设置监听器过期时间
+
+```
+<h1>当前有<span style="color: red"><%=this.getServletConfig().getServletContext().getAttribute("OnlineCount")%></span>人在线</h1>
+```
+
+# 13.过滤器和监听器的常见应用
+
+监听器GUI编程经常使用
+
+```
+//窗口
+Frame frame=new Frame("中秋节快乐");
+//面板
+Panel panel=new Panel(null);
+frame.setLayout(null);//设置窗体的布局
+frame.setBounds(300,500,500,500);
+frame.setBackground(new Color(0,0,255));
+panel.setBounds(50,50,300,300);
+panel.setBackground(new Color(0,255,255));
+frame.add(panel);
+frame.setVisible(true);
+//监听事件，关闭事件
+frame.addWindowListener(new WindowListener() {
+    public void windowOpened(WindowEvent e) {
+        System.out.println("打开ing");
+    }
+
+    public void windowClosing(WindowEvent e) {
+        System.out.println("关闭ing");
+        System.exit(0);
+    }
+
+    public void windowClosed(WindowEvent e) {
+        System.out.println("关闭ed");
+    }
+
+    public void windowIconified(WindowEvent e) {
+        System.out.println("打开");
+    }
+
+    public void windowDeiconified(WindowEvent e) {
+
+    }
+
+    public void windowActivated(WindowEvent e) {
+
+    }
+
+    public void windowDeactivated(WindowEvent e) {
+
+    }
+});
+```
+
+
+
+
+
+用户登录后才能进入主页~用户注销就不能进入主页
+
+
+
+
+
+
+
+# 14JDBC
+
+什么 JDBC：java database connection
+
+需要jar包的支持实验环境搭建
+
+```sql
+CREATE TABLE users(
+  `id` int PRIMARY KEY not NULL,
+	`name` VARCHAR(20),
+	`password` VARCHAR(20),
+	`email` VARCHAR(20),
+	`birthday` date
+
+
+);
+INSERT into users VALUES (1,"zxs","123456","895462507","1993-6-6")
+```
+
+
+
+INSERT into users VALUES (1,"zxs","123456","895462507","1993-6-6")
+
+
+
+导入依赖
+
+```
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>5.1.47</version>
+</dependency>
+```
+
+JDBC固定步骤
+
+```
+String url="jdbc:mysql://localhost:3306/jdbc?userUnicode=true&characterEncoding=utf-8";
+
+String username="root";
+String password="123";
+//1.加载驱动
+Class.forName("com.mysql.jdbc.Driver");
+//2.获取数据库连接
+Connection connection=DriverManager.getConnection(url,username,password);
+//3.向数据库发送SQL的对象
+Statement statement=connection.createStatement();
+//4.编写SQL
+String sql="select * from users";
+//5.执行SQL
+ResultSet resultSet=statement.executeQuery(sql);
+while (resultSet.next()){
+    System.out.println(resultSet.getObject("id"));
+    System.out.println(resultSet.getObject("name"));
+    System.out.println(resultSet.getObject("password"));
+    System.out.println(resultSet.getObject("email"));
+    System.out.println(resultSet.getObject("birthday"));
+}
+//6.关闭连接释放资源(先开的后关)
+resultSet.close();
+statement.close();
+connection.setAutoCommit(true);
+```
+
+**预编译SQL**
+
+```
+ String url="jdbc:mysql://localhost:3306/jdbc?userUnicode=true&characterEncoding=utf-8";
+ String username="root";
+ String password="123";
+ //1.加载驱动
+ Class.forName("com.mysql.jdbc.Driver");
+ //2.获取数据库连接
+ Connection connection= DriverManager.getConnection(url,username,password);
+ //3.编写SQL
+ String sql="insert into users (id, name, password, email, birthday) values (?,?,?,?,?);";
+ //4.预编译
+ PreparedStatement preparedStatement=connection.prepareStatement(sql);
+ preparedStatement.setInt(1,9);
+ preparedStatement.setString(2,"张雪松");
+ preparedStatement.setString(3,"123456");
+ preparedStatement.setString(4,"99999qq.com");
+ preparedStatement.setDate(5,new Date(new java.util.Date().getTime()));
+
+
+ //5.执行SQL
+int i=preparedStatement.executeUpdate();
+ if(i>0){
+     System.out.println("插入成功");
+ }
+ //6.关闭连接释放资源(先开的后关)
+preparedStatement.close();
+ connection.close();
+```
+
+## 事物
+
+要么都成功，要么都失败
+
+ACID原则，保证数据安全
+
+```sql
+开启事物
+
+事务提交
+
+事物回滚
+
+事物关闭
+A:1000
+B:1000
+
+转账
+A(900)  -- 100》 B(1100)
+
+
+```
+
+## junit单元测试
+
+简单使用
+
+@Test只在方法上有效，只要加了这个注解的方法，就可以直接运行
+
+**搭建环境测试事物**

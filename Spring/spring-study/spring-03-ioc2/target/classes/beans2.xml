@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+<!--    <bean id="user" class="com.kuang.pojo.User">-->
+<!--        <property name="name" value="秦疆"/>-->
+<!--    </bean>-->
+
+
+    <!--&lt;!&ndash;    下表赋值&ndash;&gt;-->
+    <!--    <bean id="user" class="com.kuang.pojo.User">-->
+    <!--        <constructor-arg index="0" value="狂神说Java"/>-->
+    <!--    </bean>-->
+    <!--    <bean id="user" class="com.kuang.pojo.User">-->
+    <!--        <constructor-arg type="java.lang.String" value="qinjiang"/>-->
+    <!--    </bean>-->
+<!--通过参数名-->
+    <bean id="user" class="com.kuang.pojo.User">
+        <constructor-arg name="name" value="秦疆"/>
+    </bean>
+<!--    id：bean的唯一标识符
+        就是我们的对象名
+        class:bean对象所对应的权限名：包名+类型
+        name:也是别名,可以同时取多个别名
+-->
+    <bean id="userT" class="com.kuang.pojo.UserT" name="user2,u2" >
+        <property name="name" value="西部开源"/>
+    </bean>
+<!--    起别名-->
+    <alias name="user" alias="asdasdad"/>
+
+</beans>

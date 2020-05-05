@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--p命名空间注入，直接注入属性值-->
+    <bean id="user" class="com.kuang.pojo.User" p:name="张雪松" p:age="28"/>
+
+    <!--c,通过有参构造器注入    -->
+    <bean id="user221" class="com.kuang.pojo.User" c:name="未来的你" c:age="28" scope="prototype"/>
+</beans>

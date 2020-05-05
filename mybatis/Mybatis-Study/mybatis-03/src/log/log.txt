@@ -1,0 +1,8 @@
+[INFO]17:32:46,922,[Thread]main,[Class]Mapper,[Method]test,[Line]19,User{id=2, name='', password='345'}
+[INFO]17:33:26,491,[Thread]main,[Class]Mapper,[Method]test,[Line]19,User{id=2, name='', password='345'}
+[INFO]17:34:11,822,[Thread]main,[Class]Mapper,[Method]test,[Line]19,1
+[INFO]17:34:37,237,[Thread]main,[Class]Mapper,[Method]test,[Line]19,1
+[INFO]17:37:37,250,[Thread]main,[Class]Mapper,[Method]test,[Line]19,1
+[INFO]17:55:41,021,[Thread]main,[Class]Mapper,[Method]test,[Line]23,1
+[INFO]17:56:02,945,[Thread]main,[Class]Mapper,[Method]test,[Line]23,1
+[INFO]17:57:39,249,[Thread]main,[Class]Mapper,[Method]test,[Line]23,1

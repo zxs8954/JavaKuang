@@ -20,6 +20,10 @@
     int x=1/1;
 
 %>
+<h1>2</h1>
+<%--取出参数--%>
+名字：<%=request.getParameter("name")%>
+年龄：<%=request.getParameter("age")%>
 
 
 
