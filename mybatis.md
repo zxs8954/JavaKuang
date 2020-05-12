@@ -14,11 +14,11 @@ CREATE TABLE `user`(
 
 );
 
-**1.新建项目**
+## **1.新建项目**
 
-**2.删除src目录**
+## **2.删除src目录**
 
-**3.导入依赖**
+## **3.导入依赖**
 
 ```
 <dependency>
@@ -403,7 +403,7 @@ resultType="User"
 
  <select id="getUserList" resultType="user">
         select  * from user
-    </select>
+ </select>
 ```
 
 会扫描这个包下的所有javabean，默认别名是这个类的首字母小写的类名
