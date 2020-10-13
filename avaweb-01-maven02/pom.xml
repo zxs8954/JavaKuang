@@ -11,7 +11,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.11</version>
+            <version>4.13.1</version>
         </dependency>
         <!--        MAVEN的高级之处，在意他会帮你导入这个JAR包所依赖的其他JAR包-->
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
